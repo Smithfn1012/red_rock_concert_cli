@@ -10,12 +10,12 @@ class RedRockConcertCli::CLI
   end
 
   def welcome
-    puts ""
+    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "   //                                            \\\\".green.bold
     puts "  ////                                          \\\\\\".green.bold
     puts " /// Welcome to Red Rocks Park and Amphitheatre!! \\\\".green.bold
     puts "////                                              \\\\".green.bold
-    puts ""
+    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "To see a current list of concerts, type list.".bold
     puts "To leave, please type exit."
   end
@@ -45,7 +45,7 @@ class RedRockConcertCli::CLI
     if input.to_i > 0
       concert_choice = RedRockConcertCli::Concert.find_by_index(input.to_i - 1)
       puts ""
-      puts "///////////////////////////////////////////////////////////////////////////"
+      puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       puts "Red Rocks Park & Amphitheatre is Proud to Present:".green
       puts ""
       puts "#{concert_choice.name}".bold
@@ -54,7 +54,7 @@ class RedRockConcertCli::CLI
       puts "For tickets and more information, please visit:".cyan
       puts "#{concert_choice.tickets_URL}"
       puts ""
-      puts "///////////////////////////////////////////////////////////////////////////"
+      puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       menu
     elsif
       input == "exit"
