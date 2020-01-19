@@ -1,6 +1,6 @@
 # RedRockConcertCli
 
-Welcome to your new RedRockConcertCli gem! This gem will allow you to access information regarding upcoming concerts at the Red Rocks Amphitheatre near Denver, Co.
+Welcome to your new RedRockConcertCli gem! This gem will allow you to access information regarding upcoming concerts at the Red Rocks Amphitheatre near Denver, Colorado! This is a beautiful outdoor venue that is over 6,500 ft. above sea-level, holds a little more than 9,500 people, and has been host to some of the most loved and treasured artists! Please enjoy the cli gem that I created for a final project as a student at FlatIron School.
 
 ## Installation
 
@@ -17,10 +17,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install red_rock_concert_cli
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
