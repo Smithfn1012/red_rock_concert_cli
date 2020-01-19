@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/red_rock_concert_cli'
+
+RedRockConcertCli::CLI.new.call
