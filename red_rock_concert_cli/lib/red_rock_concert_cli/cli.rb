@@ -64,7 +64,10 @@ class RedRockConcertCli::CLI
     RedRockConcertCli::Concert.all.each.with_index(1) do |concert_choice, i|
       puts "#{i}. #{concert_choice.name}"
     end
+    puts "Enter a concert number to get more information!".yellow
+    puts "Type 'exit' to exit program".yellow
   end
+
 
   def print_concert_details(list_concerts)
     user_input = gets.strip
