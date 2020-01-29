@@ -69,10 +69,10 @@ class RedRockConcertCli::CLI
   end
 
 
-  def print_concert_details(list_concerts)
+  def print_concert_details(concert)
     user_input = gets.strip
 
-    if user_input.to_i > 0
+    if user_input.to_i > 0 && user_input.to_i <= RedRockConcertCli::Concert.all.length
       concert_choice = RedRockConcertCli::Concert.find_by_index(user_input.to_i - 1)
       puts ""
       puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -86,7 +86,7 @@ class RedRockConcertCli::CLI
       puts ""
       puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     end
-    main_menu_options
+    continue?
     list_concerts
   end
 
