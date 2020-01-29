@@ -1,7 +1,7 @@
 class RedRockConcertCli::Scraper
 
     def self.scrape
-      doc = Nokogiri::HTML(open("https://www.redrocksonline.com/events/category/Concerts"))
+      doc = Nokogiri::HTML(open("https://www.redrocksonline.com/concerts-events"))
   
       doc.css("div.entry.event-icons.clearfix").each do |concert|
         name = concert.css("h3").text
