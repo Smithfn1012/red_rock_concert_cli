@@ -108,11 +108,11 @@ class RedRockConcertCli::CLI
   end
 
   def goodbye
-    puts "Thank you for using the RedRockConcertCli gem! Please come back soon!"
+    puts "Thank you for using the RedRockConcertCli gem! Please come back soon!".bold
     exit
   end
 
   def invalid_choice
-    puts "Please check your selection and try again!"
+    puts "Please check your selection and try again!".red.bold
   end
 end
