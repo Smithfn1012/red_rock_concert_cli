@@ -1,11 +1,10 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "red/rocks/cli/version"
+require "red_rock_concert_cli/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "red-rocks-cli"
-  spec.version       = Red::Rocks::Cli::VERSION
+  spec.name          = "red_rock_concert_cli"
+  spec.version       = RedRockConcertCli::VERSION
   spec.authors       = ["Felicia Smith"]
   spec.email         = ["Smithfn1012@gmail.com"]
 
@@ -17,7 +16,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
-    spec.metadata["homepage_uri"] = spec.homepage
+    spec.metadata["homepage"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github/smithfn1012/red_rock_concert_cli"
     spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
   else
