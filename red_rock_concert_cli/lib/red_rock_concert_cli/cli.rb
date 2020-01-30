@@ -86,25 +86,8 @@ class RedRockConcertCli::CLI
       puts ""
       puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     end
-    continue?
+    main_menu_options
     list_concerts
-  end
-
-  def continue?
-    puts "Type '1' for main menu, '2', to select another concert, 'exit' to exit program."
-
-    user_input = gets.strip
-    if user_input == '1'
-      main_menu_options
-    elsif user_input == '2'
-      list_concerts
-      sub_menu_options
-    elsif user_input == "exit"
-      goodbye
-    else
-      invalid_choice
-      continue?
-    end
   end
 
   def goodbye
