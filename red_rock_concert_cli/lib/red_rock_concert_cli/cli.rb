@@ -35,7 +35,8 @@ class RedRockConcertCli::CLI
     user_input = gets.strip
 
     if user_input == '1'
-      print_concert_details(list_concerts)
+      list_concerts
+      print_concert_details
       sub_menu_options
     elsif user_input.downcase == "exit"
       goodbye
@@ -50,8 +51,8 @@ class RedRockConcertCli::CLI
 
     if user_input.to_i.between?(1, RedRockConcertCli::Concert.all.length)
       concert = RedRockConcertCli::Concert.all[user_input.to_i - 1]
-      print_concert_details(concert)
-      continue?
+      list_concerts
+      print_concert_details
     elsif user_input.downcase == "exit"
       goodbye
     else
@@ -69,7 +70,7 @@ class RedRockConcertCli::CLI
   end
 
 
-  def print_concert_details(concert)
+  def print_concert_details
     user_input = gets.strip
 
     if user_input.to_i > 0 && user_input.to_i <= RedRockConcertCli::Concert.all.length
