@@ -1,5 +1,3 @@
-require 'colorize'
-
 class RedRockConcertCli::CLI
 
   def call
